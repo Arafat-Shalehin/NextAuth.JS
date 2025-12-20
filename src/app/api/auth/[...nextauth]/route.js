@@ -55,9 +55,9 @@ export const authOptions = {
     async signIn({ user, account, profile, email, credentials }) {
       return true;
     },
-    async redirect({ url, baseUrl }) {
-      return baseUrl;
-    },
+    // async redirect({ url, baseUrl }) {
+    //   return baseUrl;
+    // },
     async session({ session, token, user }) {
       if (token) {
         session.role = token.role;
